@@ -1,0 +1,410 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html>
+  <body>
+     <nav id="navbar">
+       <header>
+         <h1>Java</h1>
+       </header>
+       <ol id="nav-list">
+         <a href="#Introduction" class="nav-link"><li>Introduction</li></a>
+         <a href="#Why_use_Java_?" class="nav-link"><li>Why use Java ?</li></a>
+         <a href="#Java_Syntax" class="nav-link"><li>Java Syntax</li></a>
+         <a href="#Java_Comments" class="nav-link"><li>Java Comments</li></a>
+         <a href="#Java_Variables" class="nav-link"><li>Java Variables</li></a>
+         <a href="#Identifiers_in_Java" class="nav-link"><li>Identifiers in Java</li></a>
+         <a href="#Data_types_in_Java" class="nav-link"><li>Data types in Java</li></a>
+         <a href="#Operators_in_Java" class="nav-link"><li>Operators in Java</li></a>
+         <a href="#Reference" class="nav-link"><li>Reference</li></a>
+       </ol>
+     </nav> 
+    
+     <main id="main-doc">    
+        <section class="main-section" id="Introduction">
+           <header>
+               <h2>Introduction</h2>
+           </header>
+           <article>
+               <p>Java is a popular programming language, created in 1995. It is owned by Oracle, and more than 3 billion devices run Java.</p> 
+               <p>It is used for:</p>
+               <ul>
+                   <li>Mobile applications (specially Android apps)</li>
+                   <li>Desktop applications</li>
+                   <li>Web applications</li>
+                   <li>Web servers and application servers</li>
+                   <li>Games</li>
+               </ul>
+           </article>
+        </section>
+       
+        <section class="main-section" id="Why_use_Java_?">
+           <header>
+               <h2>Why use Java ?</h2>
+           </header>
+           <article>
+               <ul>
+                   <li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
+                   <li>It is one of the most popular programming language in the world</li>
+                   <li>It is easy to learn and simple to use</li>
+                   <li>It is open-source and free</li>
+                   <li>It is secure, fast and powerful</li>
+                   <li>It has a huge community support (tens of millions of developers)</li>
+                   <li>Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs </li>
+                   <li>As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa</li>
+               </ul>
+           </article>
+        </section>
+       
+        <section class="main-section" id="Java_Syntax">
+           <header>
+               <h2>Java Syntax</h2>
+           </header>
+           <article>
+               <p>In the previous chapter, we created a Java file called Main.java, and we used the following code to print "Hello World" to the screen:</p> 
+               <p>public class Main <br>
+                  { <br>
+                       &emsp;public static void main(String[] args) <br>
+                       &emsp;{ <br>
+                             &emsp;&emsp;System.out.println("Hello World"); <br>
+                       &emsp;} <br>
+                  }
+               </p>
+               <p> <h4>Example explained</h4> </p>
+               <p> Every line of code that runs in Java must be inside a class. In our example, we named the class Main. A class should always start with an   uppercase first letter. <br>
+Note: Java is case-sensitive: "MyClass" and "myclass" has different meaning. <br>
+               </p>
+            <p> <h4>The main Method</h4> </p>
+               <p>Any code inside the main() method will be executed. You don't have to understand the keywords before and after main.<br> For now, just remember that every Java program has a class name which must match the filename, and that every program must contain the main() method.</p>
+               <p> <h4>System.out.println()</h4> </p>
+               <p>Inside the main() method, we can use the println() method to print a line of text to the screen.</p>
+           </article>
+        </section>
+         
+        <section class="main-section" id="Java_Comments">
+           <header>
+               <h2>Java Comments</h2>
+           </header>
+           <article>
+               <p>Comments can be used to explain Java code, and to make it more readable. It can also be used to prevent execution when testing alternative code.</p> 
+               <p>The types of comments used in Java are: </p>
+               <ul>
+                   <li>Single line comments (//)</li>
+                   <li>Multi Line comments (/*...*/)</li>
+               </ul>
+           </article>
+        </section>
+         
+        <section class="main-section" id="Java_Variables">
+           <header>
+               <h2>Java Variables</h2>
+           </header>
+           <article>
+               <p>Variables are containers for storing data values. <br>
+In Java, there are different types of variables, for example:</p> 
+               <ul>
+                   <li>String - stores text, such as "Hello". String values are surrounded by double quotes</li>
+                   <li>int - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+                   <li>float - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+                   <li>char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+                   <li>boolean - stores values with two states: true or false</li>
+               </ul>
+           </article>
+        </section>
+
+        <section class="main-section" id="Identifiers_in_Java">
+           <header>
+               <h2>Identifiers in Java</h2>
+           </header>
+           <article>
+               <p>All Java variables must be identified with unique names. <br>
+These unique names are called identifiers. <br>
+Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume). <br>
+               <p>The general rules for constructing names for variables (unique identifiers) are:</p>
+               <ul>
+                   <li>Names can contain letters, digits, underscores, and dollar signs</li>
+                   <li>Names must begin with a letter</li>
+                   <li>Names should start with a lowercase letter and it cannot contain whitespace</li>
+                   <li>Names can also begin with $ and _ (but we will not use it in this tutorial)</li>
+                   <li>Names are case sensitive ("myVar" and "myvar" are different variables)</li>
+                   <li>Reserved words (like Java keywords, such as int or boolean) cannot be used as names</li>
+               </ul>
+           </article>
+        </section>
+         
+        <section class="main-section" id="Data_types_in_Java">
+           <header>
+               <h2>Data types in Java</h2>
+           </header>
+           <article>
+               <p>Data types are divided into two groups:</p> 
+               <ul>
+                   <li>Primitive data types - includes byte, short, int, long, float, double, boolean and char</li>
+                   <li>Non-primitive data types - such as String, Arrays and Classes (you will learn more about these in a later chapter)</li>
+               </ul>
+               <p> <h4>Primitive Data Types</h4> </p>
+               <p>A primitive data type specifies the size and type of variable values, and it has no additional methods. <br>
+There are eight primitive data types in Java:</p>
+               <table style="width:80%">
+                   <tr>
+                        <th>Data Type</th>
+                        <th>Size</th>
+                        <th>Description</th>
+                   </tr>
+                   <tr>
+                        <td>byte</td>
+                        <td>1 byte</td>
+                        <td>Stores whole numbers from -128 to 127</td>
+                   </tr>
+                   <tr>
+                        <td>short</td>
+                        <td>2 bytes</td>
+                        <td>Stores whole numbers from -32,768 to 32,767</td>
+                   </tr>
+                   <tr>
+                        <td>int</td>
+                        <td>4 bytes</td>
+                        <td>Stores whole numbers from -2,147,483,648 to 2,147,483,647</td>
+                   </tr>
+                   <tr>
+                        <td>long</td>
+                        <td>8 bytes</td>
+                        <td>Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
+                   </tr>
+                   <tr>
+                        <td>float</td>
+                        <td>4 bytes</td>
+                        <td>Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits</td>
+                   </tr>
+                   <tr>
+                        <td>double</td>
+                        <td>8 bytes</td>
+                        <td>Stores fractional numbers. Sufficient for storing 15 decimal digits</td>
+                   </tr>
+                   <tr>
+                        <td>boolean</td>
+                        <td>1 byte</td>
+                        <td>Stores true or false values</td>
+                   </tr>
+                   <tr>
+                        <td>char</td>
+                        <td>2 bytes</td>
+                        <td>Stores a single character/letter or ASCII values</td>
+                   </tr>
+               </table>
+               <p> <h4>Non-Primitive Data Types</h4> </p>
+               <p>Non-primitive data types are called reference types because they refer to objects. <br>
+                  The main difference between primitive and non-primitive data types are: </p>
+               <ul>
+                   <li>Primitive types are predefined (already defined) in Java. Non-primitive types are created by the programmer and is not defined by Java (except for String).</li>
+                   <li>Non-primitive types can be used to call methods to perform certain operations, while primitive types cannot.</li>
+                   <li>A primitive type has always a value, while non-primitive types can be null.</li>
+                   <li>A primitive type starts with a lowercase letter, while non-primitive types starts with an uppercase letter.</li>
+                   <li>The size of a primitive type depends on the data type, while non-primitive types have all the same size.</li>
+               </ul>   
+               <p>Examples of non-primitive types are Strings, Arrays, Classes, Interface, etc.</p>
+           </article>
+        </section>
+         
+        <section class="main-section" id="Operators_in_Java">
+           <header>
+               <h2>Operators in Java</h2>
+           </header>
+           <article>
+               <p>Java divides the operators into the following groups:</p> 
+               <p><p>
+               <ul>
+                   <li>Arithmetic operators</li>
+                   <li>Assignment operators</li>
+                   <li>Comparison operators</li>
+                   <li>Logical operators</li>
+                   <li>Bitwise operators</li>
+               </ul>
+               <h4>Arithmetic Operators:</h4>
+               <table style="width:80%">
+                   <tr>
+                        <th>Operator</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                   </tr>
+                   <tr>
+                        <td>+</td>
+                        <td>Addition</td>
+                        <td>Adds together two values</td>
+                       <td> <code> x+y </code> </td>
+                   </tr>
+                   <tr>
+                        <td>-</td>
+                        <td>Subtraction</td>
+                        <td>Subtracts one value from another</td>
+                        <td> <code> x-y </code> </td>
+                   </tr>
+                   <tr>
+                        <td>*</td>
+                        <td>Multiplication</td>
+                        <td>Multiplies two values</td>
+                        <td> <code> x*y </code> </td>
+                   </tr>
+                   <tr>
+                        <td>/</td>
+                        <td>Division</td>
+                        <td>Divides one value by another</td>
+                        <td> <code> x/y </code> </td>
+                   </tr>
+                   <tr>
+                        <td>%</td>
+                        <td>Modulus</td>
+                        <td>Returns the division remainder</td>
+                        <td> <code> x%y </code> </td>
+                   </tr>
+                   <tr>
+                        <td>++</td>
+                        <td>Increment</td>
+                        <td>Increases the value of a variable by 1</td>
+                        <td> <code> x++ </code> </td>
+                   </tr>
+                   <tr>
+                        <td>--</td>
+                        <td>Decrement</td>
+                        <td>Decreases the value of a variable by 1</td>
+                        <td> <code> y-- </code> </td>
+                   </tr>
+               </table>
+               <h4>Assignment Operators:</h4>
+               <table style="width:80%">
+                   <tr>
+                        <th>Operator</th>
+                        <th>Example</th>
+                        <th>Same as</th>
+                   </tr>
+                   <tr>
+                        <td>=</td>
+                        <td>x=5</td>
+                        <td>x=5</td>
+                   </tr>
+                   <tr>
+                        <td>-=</td>
+                        <td>x -= 3</td>
+                        <td>x = x-3</td>
+                   </tr>
+                   <tr>
+                        <td>*=</td>
+                        <td>x *= 3</td>
+                        <td>x = x*3</td>
+                   </tr>
+                   <tr>
+                        <td>/=</td>
+                        <td>x /= 3</td>
+                        <td>x = x/3</td>
+                   </tr>
+                   <tr>
+                        <td>%=</td>
+                        <td>x %= 3</td>
+                        <td>x = x%3</td>
+                   </tr>
+                   <tr>
+                        <td>&=</td>
+                        <td>x &= 3</td>
+                        <td>x = x&3</td>
+                   </tr>
+                   <tr>
+                        <td>|=</td>
+                        <td>x |= 3</td>
+                        <td>x = x|3</td>
+                   </tr>
+                   <tr>
+                        <td>^=</td>
+                        <td>x ^= 3</td>
+                        <td>x = x^3</td>
+                   </tr>
+                   <tr>
+                        <td>>>=</td>
+                        <td>x >>= 3</td>
+                        <td>x = x >> 3</td>
+                   </tr>
+                   <tr>
+                        <td><<=</td>
+                        <td>x <<= 3</td>
+                        <td>x = x << 3</td>
+                   </tr>
+               </table>
+               <h4>Comparison Operators:</h4>
+               <table style="width:80%">
+                   <tr>
+                        <th>Operator</th>
+                        <th>Name</th>
+                        <th>Example</th>
+                   </tr>
+                   <tr>
+                        <td>==</td>
+                        <td>Equal to</td>
+                        <td>x == y	</td>
+                   </tr>
+                   <tr>
+                        <td>!=</td>
+                        <td>Not equal</td>
+                        <td>x !== y</td>
+                   </tr>
+                   <tr>
+                        <td>></td>
+                        <td>Greater than</td>
+                        <td>x > y</td>
+                   </tr>
+                   <tr>
+                        <td><</td>
+                        <td>Less than</td>
+                        <td>x < y</td>
+                   </tr>
+                   <tr>
+                        <td>>=</td>
+                        <td>Greater than or equal to</td>
+                        <td>x >= y</td>
+                   </tr>
+                   <tr>
+                        <td><=</td>
+                        <td>Less than or equal to</td>
+                        <td>x <= y</td>
+                   </tr>
+               </table>
+               <h4>Logical Operators:</h4>
+               <table style="width:80%">
+                   <tr>
+                        <th>Operator</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                   </tr>
+                   <tr>
+                        <td>&& </td>
+                        <td>Logical and	</td>
+                        <td>Returns true if both statements are true</td>
+                       <td>x < 5 &&  x < 10</td>
+                   </tr>
+                   <tr>
+                        <td>||</td>
+                        <td>Logical or</td>
+                        <td>Returns true if one of the statements is true</td>
+                        <td>x < 5 || x < 4</td>
+                   </tr>
+                   <tr>
+                        <td>!</td>
+                        <td>Logical not</td>
+                        <td>Reverse the result, returns false if the result is true</td>
+                        <td>!(x < 5 && x < 10)</td>
+                   </tr>
+               </table>
+           </article>
+        </section>
+        <section class="main-section" id="Reference">
+           <header>
+               <h2>Reference</h2>
+           </header>
+           <article>
+               <p>All the content in this page is from
+                   <a href="https://www.w3schools.com/java/java_intro.asp">Java Reference</a>
+               </p>
+      </article>
+    </section>
+  </main>
+  </body>
+</html>
